@@ -99,20 +99,20 @@ html, body {
 
 @media (min-width: 1200px) {
 	.hero-bg {
-		background-image: url("/img/hero/large.jpg");
+		background-image: url("../img/hero/large.jpg");
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	.hero-bg {
-		background-image: url("/img/hero/medium.jpg");
+		background-image: url("../img/hero/medium.jpg");
 	}
 }
 
 @media (max-width: 991px) {
 	.hero-bg {
-		/*background-position: 75% center;*/
-		background-image: url("/img/hero/small.jpg");
+		background-position: 75% center;
+		background-image: url("../img/hero/small.jpg");
 	}
 }
 
