@@ -1,1 +1,122 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto");
+@import url("parallax.css");
+
+/* Set the default font properties */
+:root {
+	font-size: 16pt;
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Reset <html> and <body> */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	overflow-y: hidden;
+}
+
+/* Navigation */
+.navbar {
+	position: relative;
+	width: calc(100% - 20px);
+	padding: 10px;
+	background-color: #EEE;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	z-index: 10;
+}
+
+.navbar__brand {
+	width: 200px;
+	min-width: 200px;
+	margin: auto 50px;
+}
+
+.navbar__container {
+	margin-left: 200px;
+	padding: 0;
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.navbar__item {
+	width: 100%;
+	padding: 5px;
+	color: #424242;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navbar__item--cta-button {
+	color: #440f15;
+	border: 2px solid #440f15;
+	border-radius: 50px;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar__item--cta-button:hover {
+	color: #EEE;
+	background-color: #440f15;
+}
+
+/* Hero */
+.hero {
+	color: #EEE;
+	text-align: center;
+}
+
+.hero__grid {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.hero__col {
+	width: 100%;
+	height: 100%;
+}
+
+.parallax__layer--hero {
+	width: calc(100% + 50px);
+	min-height: 250px;
+}
+
+
+.hero-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: background-position 0.5s;
+}
+
+@media (min-width: 1200px) {
+	.hero-bg {
+		background-image: url("/img/hero/large.jpg");
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.hero-bg {
+		background-image: url("/img/hero/medium.jpg");
+	}
+}
+
+@media (max-width: 991px) {
+	.hero-bg {
+		/*background-position: 75% center;*/
+		background-image: url("/img/hero/small.jpg");
+	}
+}
+
+.hero-about__logo {
+	margin: 100px;
+	width: 50%;
+}
