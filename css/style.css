@@ -122,6 +122,14 @@ html, body {
 	}
 }
 
+/* HERO About section */
+.hero__about-text {
+	width: 50%;
+	padding: 15px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.3)
+}
+
 /* HERO CTA section */
 .hero__col--cta {
 	align-self: center;
@@ -195,7 +203,7 @@ html, body {
 .specifications__col--image {
 	width: 50%;
 	margin-right: 50px;
-	background: url("../img/moto360/Moto_360_(2nd gen)_42mm_Cognac_Charging.jpg") no-repeat center / cover;
+	background:  url("../img/moto360/Moto_360_(2nd gen)_42mm_Cognac_Charging.jpg") no-repeat center / 100%;
 }
 
 .specifications__col--deep {
@@ -244,6 +252,10 @@ html, body {
 
 	.navbar__trigger {
 		display: block;
+	}
+
+	.hero__about-text {
+		width: calc(100% - 130px);
 	}
 }
 
